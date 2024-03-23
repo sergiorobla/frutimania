@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frutimanía - Random Array</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="./src/img/icon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./src/css/style.css" />
+  </head>
+  <body>
+    <header>
+      <a href="./index.html"><h1>Frutimanía</h1></a>
+    </header>
+    <main>
+      <div class="intro">
+        <p>¿Que fruta te saldra?</p>
+        <p class="secondP">Escoge por donde quieres empezar.</p>
+      </div>
+      <div class="btn">
+        <form action="#">
+          <button id="unshift">Delante</button>
+          <button id="push">Detrás</button>
+          <button id="insertAt">Posición</button>
+          <input type="number" id="addPosition" value="0" min="0" />
+        </form>
+      </div>
+      <div class="intro">
+        <p class="secondP">Escoge por donde quieres borrar.</p>
+      </div>
+      <div class="btn">
+        <form action="#">
+          <button id="shift">Borrar Delante</button>
+          <button id="pop">Borrar Detrás</button>
+          <button id="deleteAt">Borrar Posición</button>
+          <input type="number" id="deletePosition" value="0" min="0" />
+        </form>
+      </div>
+      <div id="content"></div>
+    </main>
+    <script src="./src/js/main.js"></script>
+  </body>
+</html>
